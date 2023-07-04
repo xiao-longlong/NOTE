@@ -1,0 +1,560 @@
+services:
+  base_conda.py310:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_conda/Dockerfile.py310
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_conda:py310
+  base_conda.py37:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_conda/Dockerfile.py37
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_conda:py37
+  base_conda.py38:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_conda/Dockerfile.py38
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_conda:py38
+  base_conda.py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_conda/Dockerfile.py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_conda:py39
+  base_dind.dind18:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_dind/Dockerfile.dind18
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_dind:dind18
+  base_dind.dind23:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_dind/Dockerfile.dind23
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_dind:dind23
+  base_python.py310:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_python/Dockerfile.py310
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_python:py310
+  base_python.py311:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_python/Dockerfile.py311
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_python:py311
+  base_python.py312:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_python/Dockerfile.py312
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_python:py312
+  base_python.py38:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_python/Dockerfile.py38
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_python:py38
+  base_python.py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_python/Dockerfile.py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_python:py39
+  base_ubuntu.zh:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/base_ubuntu/Dockerfile.zh
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/base_ubuntu:zh
+  cuda_conda.cu113-py37:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu113-py37
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu113-py37
+  cuda_conda.cu113-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu113-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu113-py39
+  cuda_conda.cu114-py38:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu114-py38
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu114-py38
+  cuda_conda.cu115-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu115-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu115-py39
+  cuda_conda.cu116-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu116-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu116-py39
+  cuda_conda.cu117-py310:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu117-py310
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu117-py310
+  cuda_conda.cu117-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu117-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu117-py39
+  cuda_conda.cu118-py310:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu118-py310
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu118-py310
+  cuda_conda.cu118-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda/Dockerfile.cu118-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda:cu118-py39
+  cuda_conda_pytorch.cu113-py39-torch10:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch/Dockerfile.cu113-py39-torch10
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch:cu113-py39-torch10
+  cuda_conda_pytorch.cu113-py39-torch11:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch/Dockerfile.cu113-py39-torch11
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch:cu113-py39-torch11
+  cuda_conda_pytorch.cu113-py39-torch12:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch/Dockerfile.cu113-py39-torch12
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch:cu113-py39-torch12
+  cuda_conda_pytorch.cu116-py39-torch13:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch/Dockerfile.cu116-py39-torch13
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch:cu116-py39-torch13
+  cuda_conda_pytorch.cu117-py310-torch13:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch/Dockerfile.cu117-py310-torch13
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch:cu117-py310-torch13
+  cuda_conda_pytorch.cu117-py39-torch13:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch/Dockerfile.cu117-py39-torch13
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch:cu117-py39-torch13
+  cuda_conda_pytorch2.cu118-py310-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch2/Dockerfile.cu118-py310-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch2:cu118-py310-torch20
+  cuda_conda_pytorch2.cu118-py39-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_conda_pytorch2/Dockerfile.cu118-py39-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_conda_pytorch2:cu118-py39-torch20
+  cuda_python.cu113-py37:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu113-py37
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu113-py37
+  cuda_python.cu113-py38:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu113-py38
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu113-py38
+  cuda_python.cu113-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu113-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu113-py39
+  cuda_python.cu116-py37:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu116-py37
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu116-py37
+  cuda_python.cu116-py38:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu116-py38
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu116-py38
+  cuda_python.cu116-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu116-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu116-py39
+  cuda_python.cu117-py310:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu117-py310
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu117-py310
+  cuda_python.cu117-py311:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu117-py311
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu117-py311
+  cuda_python.cu117-py38:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu117-py38
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu117-py38
+  cuda_python.cu117-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu117-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu117-py39
+  cuda_python.cu118-py310:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu118-py310
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu118-py310
+  cuda_python.cu118-py311:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu118-py311
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu118-py311
+  cuda_python.cu118-py39:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_python/Dockerfile.cu118-py39
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_python:cu118-py39
+  cuda_pytorch.cu116-py38-torch13:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch/Dockerfile.cu116-py38-torch13
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch:cu116-py38-torch13
+  cuda_pytorch.cu116-py39-torch13:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch/Dockerfile.cu116-py39-torch13
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch:cu116-py39-torch13
+  cuda_pytorch.cu117-py310-torch13:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch/Dockerfile.cu117-py310-torch13
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch:cu117-py310-torch13
+  cuda_pytorch.cu117-py39-torch13:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch/Dockerfile.cu117-py39-torch13
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch:cu117-py39-torch13
+  cuda_pytorch2.cu117-py310-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch2/Dockerfile.cu117-py310-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch2:cu117-py310-torch20
+  cuda_pytorch2.cu117-py311-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch2/Dockerfile.cu117-py311-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch2:cu117-py311-torch20
+  cuda_pytorch2.cu117-py39-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch2/Dockerfile.cu117-py39-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch2:cu117-py39-torch20
+  cuda_pytorch2.cu118-py310-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch2/Dockerfile.cu118-py310-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch2:cu118-py310-torch20
+  cuda_pytorch2.cu118-py311-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch2/Dockerfile.cu118-py311-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch2:cu118-py311-torch20
+  cuda_pytorch2.cu118-py39-torch20:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cuda_pytorch2/Dockerfile.cu118-py39-torch20
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cuda_pytorch2:cu118-py39-torch20
+  cudnn_devel_cuda.cu112:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu112
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu112
+  cudnn_devel_cuda.cu113:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu113
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu113
+  cudnn_devel_cuda.cu114:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu114
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu114
+  cudnn_devel_cuda.cu115:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu115
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu115
+  cudnn_devel_cuda.cu116:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu116
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu116
+  cudnn_devel_cuda.cu117:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu117
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu117
+  cudnn_devel_cuda.cu118:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu118
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu118
+  cudnn_devel_cuda.cu120:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu120
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu120
+  cudnn_devel_cuda.cu121:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/cudnn_devel_cuda/Dockerfile.cu121
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/cudnn_devel_cuda:cu121
+  steam.base:
+    build:
+      args: [progress=plain]
+      context: .
+      dockerfile: dockerfiles/steam/Dockerfile.base
+      network: host
+    environment: [SHOW=true, DOCKER_BUILDKIT=1]
+    hostname: ubuntu
+    image: harbor.x-contion.top:500/x-contion/steam:base
+version: '3.9'
