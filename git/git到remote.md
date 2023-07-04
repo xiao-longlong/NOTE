@@ -37,23 +37,43 @@ git add .
 git commit -m "Initial commit"
 ```
 
-## 2.1git到实验室的gitlab
+## 2.1命令行操作
 
-### 2.1.1命令行操作
+### 2.1.1git到实验室的gitlab
 
 ```shell
 # 为项目新建分支并切换到此分支（此步骤不必要，如果想直接上传主分支，就不用新建分支）
 git branch <新分支名>
 
 # 添加实验室gitlab为远程仓库
-git remote add <远程仓库名>(自己命名即可) <gitlab_URL>
+git remote add <远程仓库名> <gitlab_URL>
 
 # 推到实验室的gitlab上
-git push
+git push <远程仓库名> <分支名>
 ```
 + 说明
-  + <gitlab_URL>需要通过如下网址登陆是实验室的gitlab，或新建项目，或找到要psuh的项目以拿到,如下
+  + <gitlab_URL>需要通过如下网址登陆是实验室的gitlab，或新建项目，或找到要psuh的项目以拿到,使用HPPT即可,如下。
 > http://git.x-contion.top:1213/
 
 ![gitlab_URL](../image/gitlab_URL.png)
-这里是测试，这里是用typora测试
+## 2.1.2git到自己的github
+
+```shell
+# 为项目新建分支并切换到此分支（此步骤不必要，如果想直接上传主分支，就不用新建分支）
+git branch <新分支名>
+
+# 添加自己的github为远程仓库
+git remote add <远程仓库名> <github_URL>
+
+#########################################################
+#在推到自己的github上之前，需要把项目所在电脑的公钥，放到github上
+#########################################################
+
+# 推到自己的github上
+git push <远程仓库名> <分支名>
+```
+
++ 说明
+  + <github_URL>是在自己的github的对应项目的ssh处下拿到的，如下图，github的服务器在国外，走HTTP会超时报错。
+
+![github_URL](../image/github_URL.png)
